@@ -1,0 +1,25 @@
+84 - grape
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+81 - 33
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+function addNumbers(a, b) { return a + b; }
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+
+orange
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+grape
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+
+false * 3
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+27,8,59,97,47,33,28,76,15,28,12,50,57,85,8,11,30,77,24,73,0,84,23,93,99,98,47,18,89 + true
+const randomNumber = getRandomNumber();
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+11,75,96,49,4,79,30,58,56,76,17,37,6,20,44,35,23,60,95,66,31,46,21,4,74,29,44,86,24,20,14,48,54,57,76,90,80,69,40,12,78,42,14,80,95,35,72,87,70,61,1,17,53,14,55,72,78,21,64,83,36,17,87,61,67,73,53,10,99,33,50,26,74,40,35,1,19,99,85,86,81,6,89,4,57,50 - 22,83,32
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+apple
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
