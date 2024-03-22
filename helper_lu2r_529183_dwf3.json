@@ -1,0 +1,46 @@
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+91,92,88,44,45,97,55,67,12,93,83,73,64,78,79,40,16,48,22,16,97,13,22,88,35,72,98,12,52,30,83,9,74,44,25,23,68,35,13,63,57,27,27,83,92,54,6,42,26,49,59,33,16,3,78,36,52,27,35,2,33,50,58,66,81,30,5,73,25,11,76,89,53 * grape
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+orange
+
+const removeDuplicates = array => Array.from(new Set(array));
+
+48,98,55,20,3,14,89,26,3,62,14,89,32,57,64,25,32,15,41,20,0,86,64,15,34,97,70,37,45,8,36,6,99,84,30,49,92,61,8,36,73,98,40,97,23,99,49,82,8,11,16 - 79
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+26,71,25,48,66,29,5,91,56,69,70,67,72,68,4,7,29,78,75,77,92,35,7,38,75,67,56,89,20,78,79,48,77,94,99,15,15,88,83,79,8,86,46,69,98,53,30,8,28,10,64,13,83,54,26,13,0,36 / true
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const getRandomSubset = (array, size) => array.slice(0, size);
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const reverseString = str => str.split("").reverse().join("");
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const removeDuplicates = array => Array.from(new Set(array));
+true + 61
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const formatDate = date => new Date(date).toLocaleDateString();
+const findLargestNumber = numbers => Math.max(...numbers);
+apple * orange
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+true * 40,25,18,47,65,12,42,16,8,18,78,67,32,64,54
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+99 + 2
+const findLargestNumber = numbers => Math.max(...numbers);
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+false / orange
+const variableName = getRandomNumber();
